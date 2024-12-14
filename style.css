@@ -1,0 +1,175 @@
+*,body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #FFD700;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #E6E6E6;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #1E90FF; /* Strong blue for better visibility */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: yellow;
+}
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 500;
+}
+
+.navbar-extras {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#searchBar {
+    max-width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#loginButton, #cartButton {
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+#cartButton {
+    /* background-color: #28a741; */
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.offcanvas {
+    background-color: #343a40; /* Dark background */
+    color: white;
+}
+.offcanvas a {
+    color: white;
+    text-decoration: none;
+}
+.offcanvas a:hover {
+    color: #ffc107; /* Yellow hover effect */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333333; /* Darker shade for better text visibility */
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #141414;
+    color: #FF4500; /* Brighter red for better visibility */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #1C1C1C; /* Slightly lighter black for differentiation */
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #FFFFFF; /* White for strong contrast */
+}
+
+.product-card .price {
+    color: #32CD32; /* Bright green for emphasis on price */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: #CCCCCC; /* Softer grey for readability */
+}
+
+#product-veggies {
+    color: #F5F5F5; /* Near white for better contrast */
+}
+
+#product-veggies-Quanity {
+    font-size: 1em;
+    color: #E0E0E0; /* Slightly darker than text for subtle emphasis */
+}
